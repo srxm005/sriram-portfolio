@@ -2,53 +2,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sriram K Portfolio</title>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Sriram K</h1>
-        <p>Front-End Developer & Data Analyst</p>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#resume">Resume</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <div class="container">
+            <h1>Sriram K</h1>
+            <p>Front-End Developer & Data Analyst</p>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#resume">Resume</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
     </header>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Programming Languages: C++, Python, SQL<br>
-           Core Subjects: DBMS, OOPS, CN, OS<br>
-           Full Stack: React Js, Node Js, Express Js, MongoDB, UI/UX<br>
-           Data Science: NumPy, Pandas, Scikit-learn, Excel, SQL, Matplotlib, Seaborn, Power BI<br>
-           Soft Skills: Communication, Problem Solving, Leadership, Time Management, Fast Learner</p>
-    </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>Campus Connect (SRM Ramapuram)</strong><br>
-                MERN stack project providing notes and event info.<br>
-                Tools: Node.js, Express.js, MongoDB, React.js</li>
-            <li><strong>Big Mart Sales Prediction</strong><br>
-                Sales prediction using XGBoost and performance optimization.<br>
-                Tools: Python, XGBoost</li>
-            <li><strong>Brain Tumor Detection</strong><br>
-                Detection model using CNN on MRI images.<br>
-                Tools: Python, CNN</li>
-        </ul>
-    </section>
-    <section id="resume">
-        <h2>Resume</h2>
-        <p><a href="SRIRAM RESUME.pdf" target="_blank">Download My Resume</a></p>
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:sriram.k1027@gmail.com">sriram.k1027@gmail.com</a><br>
-           Phone: +91 7358555705</p>
-    </section>
+    <main>
+        <section id="about" class="fade-in">
+            <h2>About Me</h2>
+            <p>Programming Languages: C++, Python, SQL<br>
+               Core Subjects: DBMS, OOPS, CN, OS<br>
+               Full Stack: React Js, Node Js, Express Js, MongoDB, UI/UX<br>
+               Data Science: NumPy, Pandas, Scikit-learn, Excel, SQL, Matplotlib, Seaborn, Power BI<br>
+               Soft Skills: Communication, Problem Solving, Leadership, Time Management, Fast Learner</p>
+        </section>
+        <section id="projects" class="fade-in">
+            <h2>Projects</h2>
+            <div class="project-card">
+                <h3>Campus Connect (SRM Ramapuram)</h3>
+                <p>MERN stack project providing notes and event info.<br>Tools: Node.js, Express.js, MongoDB, React.js</p>
+            </div>
+            <div class="project-card">
+                <h3>Big Mart Sales Prediction</h3>
+                <p>Sales prediction using XGBoost and performance optimization.<br>Tools: Python, XGBoost</p>
+            </div>
+            <div class="project-card">
+                <h3>Brain Tumor Detection</h3>
+                <p>Detection model using CNN on MRI images.<br>Tools: Python, CNN</p>
+            </div>
+        </section>
+        <section id="resume" class="fade-in">
+            <h2>Resume</h2>
+            <p><a href="SRIRAM RESUME.pdf" target="_blank" class="button">Download My Resume</a></p>
+        </section>
+        <section id="contact" class="fade-in">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:sriram.k1027@gmail.com">sriram.k1027@gmail.com</a><br>
+               Phone: +91 7358555705</p>
+        </section>
+    </main>
     <footer>
         <p>© 2025 Sriram K</p>
     </footer>

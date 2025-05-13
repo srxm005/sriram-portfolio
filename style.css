@@ -1,32 +1,61 @@
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
     margin: 0;
-    padding: 0;
-    background: #f4f4f4;
-    color: #333;
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #f5f5f5;
+    line-height: 1.6;
 }
 header {
-    background: #333;
-    color: #fff;
+    background-color: #1f1f1f;
     padding: 20px 0;
     text-align: center;
 }
-header nav a {
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+header p {
+    margin: 5px 0 20px;
+    font-size: 1.2em;
+}
+nav a {
+    color: #bb86fc;
     margin: 0 15px;
-    color: #fff;
     text-decoration: none;
+    font-weight: bold;
+}
+main {
+    padding: 20px;
 }
 section {
+    margin: 40px 0;
+}
+.project-card {
+    background-color: #1e1e1e;
     padding: 20px;
-    margin: 20px;
-    background: #fff;
-    border-radius: 8px;
+    margin-bottom: 20px;
+    border-left: 4px solid #bb86fc;
+    border-radius: 5px;
+}
+.button {
+    background-color: #bb86fc;
+    color: #000;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
 }
 footer {
     text-align: center;
-    padding: 10px;
-    background: #333;
-    color: #fff;
+    padding: 20px;
+    background-color: #1f1f1f;
+}
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
 }
